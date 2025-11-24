@@ -9,7 +9,7 @@ This repository contains a modern, responsive personal portfolio website featuri
 - **Responsive Design**: Mobile-friendly layout that works on all devices
 - **Modern Styling**: Gradient background with card-based design
 - **SEO Optimized**: Includes meta tags for search engines and social media
-- **Accessible**: Semantic HTML with proper ARIA attributes
+- **Accessible**: Semantic HTML with descriptive alt text and proper structure
 - **Secure**: External links use proper security attributes
 
 ## 📋 Sections

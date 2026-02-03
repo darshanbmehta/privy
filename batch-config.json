@@ -1,0 +1,28 @@
+{
+  "batchConfig": {
+    "useProxies": true,
+    "maxConcurrent": 3,
+    "delayBetweenRequests": 10000,
+
+    "headless": true
+  },
+  "proxyConfig": {
+    "enableProxyRotation": true,
+    "proxyTestTimeout": 10000,
+    "maxProxyFailures": 3,
+    "preferWorkingProxies": true
+  },
+  "downloadConfig": {
+    "timeout": 60000,
+    "pageLoadDelay": 8000,
+    "monitoringDelay": 20000,
+    "retryDelay": 2000
+  },
+  "outputConfig": {
+    "downloadsDir": "downloads",
+    "reportsDir": "downloads",
+    "saveWorkingProxies": true,
+    "generateCSVReport": true,
+    "generateJSONReport": false
+  }
+}

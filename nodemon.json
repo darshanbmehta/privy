@@ -1,0 +1,33 @@
+{
+  "watch": [
+    "ultimate-ssrn-downloader.js",
+    "ultimate-ssrn-downloader-multi.js",
+    "fast-ssrn-downloader.js",
+    "proxies.js",
+    "multi-config.json",
+    "batch-config.json"
+  ],
+  "ext": "js,json",
+  "ignore": [
+    "node_modules/", 
+    "downloads/",
+    "chromium/",
+    "*.log", 
+    "*.txt", 
+    "*.png", 
+    "*.pdf"
+  ],
+  "delay": 2500,
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "restartable": "rs",
+  "colours": true,
+  "legacyWatch": false,
+  "verbose": true,
+  "events": {
+    "restart": "echo '\n🔄 Restarting SSRN downloader due to file changes...\n'",
+    "start": "echo '\n🚀 Starting SSRN downloader with nodemon...\n'",
+    "crash": "echo '\n💥 SSRN downloader crashed! Restarting in 5 seconds...\n'"
+  }
+}

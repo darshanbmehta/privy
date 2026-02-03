@@ -1,0 +1,32 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon mainFS3.js",
+    "dev": "nodemon ssrn.js",
+    "ssrn": "nodemon ssrn.js",
+    "ultimate": "nodemon ultimate-ssrn-downloader.js",
+    "ultimate:multi": "nodemon ultimate-ssrn-downloader-multi.js",
+    "fast": "nodemon fast-ssrn-downloader.js",
+    "batch": "nodemon ultimate-ssrn-downloader.js",
+    "watch": "nodemon --help"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "async": "^3.2.6",
+    "axios": "^1.13.2",
+    "http-proxy-agent": "^7.0.2",
+    "node-cron": "^4.2.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.11",
+    "puppeteer": "^24.36.0",
+    "tough-cookie": "^6.0.0",
+    "ws": "^8.19.0",
+    "xml2js": "^0.6.2"
+  },
+  "type": "module"
+}

@@ -1,0 +1,975 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "test-main2",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"main2.js"
+			],
+			"group": "test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-downloader-instance",
+			"type": "shell",
+			"command": "node",
+			"args": [
+				"ultimate-ssrn-downloader-multi.js"
+			],
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"panel": "new"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "cleanup-downloads-every-30min",
+			"type": "shell",
+			"command": "zsh",
+			"args": [
+				"-c",
+				"while true; do node /Users/darshanbmehta/eb1/cleanup-downloads.js; sleep 1800; done"
+			],
+			"problemMatcher": [],
+			"isBackground": true,
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"detail": "Runs cleanup-downloads.js every 30 minutes in a background terminal."
+		},
+		{
+			"label": "ssrn-nodemon-instance-1",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 0; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-2",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 5; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-3",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 10; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-4",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 15; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-5",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 20; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-6",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 25; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-7",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 30; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-8",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 35; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-9",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 40; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-10",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 45; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-11",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 50; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-12",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 55; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-13",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 60; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-14",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 65; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-15",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 70; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-16",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 75; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-17",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 80; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-18",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 85; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-19",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 90; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-20",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 95; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-21",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 100; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-22",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 105; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-23",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 110; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-24",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 115; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-25",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 120; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-26",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 125; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-27",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 130; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-28",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 135; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-29",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 140; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-30",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 145; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-31",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 150; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-32",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 155; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-33",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 160; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-34",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 165; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-35",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 170; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-36",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 175; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-37",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 180; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-38",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 185; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-39",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 190; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-40",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 195; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-41",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 200; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-42",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 205; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-43",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 210; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-44",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 215; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-45",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 220; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-46",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 225; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-47",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 230; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-48",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 235; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-49",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 240; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-50",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 245; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-51",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 250; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-52",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 255; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-53",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 260; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-54",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 265; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-55",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 270; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-56",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 275; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-57",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 280; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-58",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 285; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-59",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 290; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-60",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 295; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-61",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 300; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-62",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 305; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-63",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 310; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-64",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 315; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-65",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 320; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-66",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 325; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-67",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 330; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-68",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 335; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-69",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 340; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-70",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 345; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-71",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 350; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-72",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 355; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-73",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 360; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-74",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 365; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-75",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 370; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-76",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 375; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-77",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 380; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-78",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 385; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-79",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 390; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-80",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 395; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-81",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 400; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-82",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 405; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-83",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 410; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-84",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 415; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-85",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 420; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-86",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 425; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-87",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 430; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-88",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 435; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-89",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 440; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-90",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 445; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-91",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 450; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-92",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 455; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-93",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 460; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-94",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 465; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-95",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 470; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-96",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 475; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-97",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 480; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-98",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 485; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-99",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 490; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "ssrn-nodemon-instance-100",
+			"type": "shell",
+			"command": "zsh",
+			"args": ["-c", "sleep 495; cd /Users/darshanbmehta/eb1 && npx nodemon ultimate-ssrn-downloader-multi.js"],
+			"isBackground": true,
+			"presentation": { "reveal": "always", "panel": "new" },
+			"problemMatcher": []
+		},
+		{
+			"label": "launch-30-ssrn-nodemon-terminals",
+			"dependsOn": [
+					"cleanup-downloads-every-30min",
+					"ssrn-nodemon-instance-1","ssrn-nodemon-instance-2","ssrn-nodemon-instance-3","ssrn-nodemon-instance-4","ssrn-nodemon-instance-5","ssrn-nodemon-instance-6","ssrn-nodemon-instance-7","ssrn-nodemon-instance-8","ssrn-nodemon-instance-9","ssrn-nodemon-instance-10","ssrn-nodemon-instance-11","ssrn-nodemon-instance-12","ssrn-nodemon-instance-13","ssrn-nodemon-instance-14","ssrn-nodemon-instance-15","ssrn-nodemon-instance-16","ssrn-nodemon-instance-17","ssrn-nodemon-instance-18","ssrn-nodemon-instance-19","ssrn-nodemon-instance-20","ssrn-nodemon-instance-21","ssrn-nodemon-instance-22","ssrn-nodemon-instance-23","ssrn-nodemon-instance-24","ssrn-nodemon-instance-25","ssrn-nodemon-instance-26","ssrn-nodemon-instance-27","ssrn-nodemon-instance-28","ssrn-nodemon-instance-29","ssrn-nodemon-instance-30"
+			],
+			"dependsOrder": "parallel",
+			"problemMatcher": [],
+			"detail": "Launches 30 VS Code terminals, each running nodemon for the SSRN downloader, staggered by 5 seconds, and starts periodic downloads cleanup."
+		},
+		{
+			"label": "launch-100-ssrn-nodemon-terminals",
+			"dependsOn": [
+				"cleanup-downloads-every-30min",
+				"ssrn-nodemon-instance-1","ssrn-nodemon-instance-2","ssrn-nodemon-instance-3","ssrn-nodemon-instance-4","ssrn-nodemon-instance-5","ssrn-nodemon-instance-6","ssrn-nodemon-instance-7","ssrn-nodemon-instance-8","ssrn-nodemon-instance-9","ssrn-nodemon-instance-10",
+				"ssrn-nodemon-instance-11","ssrn-nodemon-instance-12","ssrn-nodemon-instance-13","ssrn-nodemon-instance-14","ssrn-nodemon-instance-15","ssrn-nodemon-instance-16","ssrn-nodemon-instance-17","ssrn-nodemon-instance-18","ssrn-nodemon-instance-19","ssrn-nodemon-instance-20",
+				"ssrn-nodemon-instance-21","ssrn-nodemon-instance-22","ssrn-nodemon-instance-23","ssrn-nodemon-instance-24","ssrn-nodemon-instance-25","ssrn-nodemon-instance-26","ssrn-nodemon-instance-27","ssrn-nodemon-instance-28","ssrn-nodemon-instance-29","ssrn-nodemon-instance-30",
+				"ssrn-nodemon-instance-31","ssrn-nodemon-instance-32","ssrn-nodemon-instance-33","ssrn-nodemon-instance-34","ssrn-nodemon-instance-35","ssrn-nodemon-instance-36","ssrn-nodemon-instance-37","ssrn-nodemon-instance-38","ssrn-nodemon-instance-39","ssrn-nodemon-instance-40",
+				"ssrn-nodemon-instance-41","ssrn-nodemon-instance-42","ssrn-nodemon-instance-43","ssrn-nodemon-instance-44","ssrn-nodemon-instance-45","ssrn-nodemon-instance-46","ssrn-nodemon-instance-47","ssrn-nodemon-instance-48","ssrn-nodemon-instance-49","ssrn-nodemon-instance-50",
+				"ssrn-nodemon-instance-51","ssrn-nodemon-instance-52","ssrn-nodemon-instance-53","ssrn-nodemon-instance-54","ssrn-nodemon-instance-55","ssrn-nodemon-instance-56","ssrn-nodemon-instance-57","ssrn-nodemon-instance-58","ssrn-nodemon-instance-59","ssrn-nodemon-instance-60",
+				"ssrn-nodemon-instance-61","ssrn-nodemon-instance-62","ssrn-nodemon-instance-63","ssrn-nodemon-instance-64","ssrn-nodemon-instance-65","ssrn-nodemon-instance-66","ssrn-nodemon-instance-67","ssrn-nodemon-instance-68","ssrn-nodemon-instance-69","ssrn-nodemon-instance-70",
+				"ssrn-nodemon-instance-71","ssrn-nodemon-instance-72","ssrn-nodemon-instance-73","ssrn-nodemon-instance-74","ssrn-nodemon-instance-75","ssrn-nodemon-instance-76","ssrn-nodemon-instance-77","ssrn-nodemon-instance-78","ssrn-nodemon-instance-79","ssrn-nodemon-instance-80",
+				"ssrn-nodemon-instance-81","ssrn-nodemon-instance-82","ssrn-nodemon-instance-83","ssrn-nodemon-instance-84","ssrn-nodemon-instance-85","ssrn-nodemon-instance-86","ssrn-nodemon-instance-87","ssrn-nodemon-instance-88","ssrn-nodemon-instance-89","ssrn-nodemon-instance-90",
+				"ssrn-nodemon-instance-91","ssrn-nodemon-instance-92","ssrn-nodemon-instance-93","ssrn-nodemon-instance-94","ssrn-nodemon-instance-95","ssrn-nodemon-instance-96","ssrn-nodemon-instance-97","ssrn-nodemon-instance-98","ssrn-nodemon-instance-99","ssrn-nodemon-instance-100"
+			],
+			"dependsOrder": "parallel",
+			"problemMatcher": [],
+			"detail": "Launches 100 VS Code terminals, each running nodemon for the SSRN downloader, staggered by 5 seconds, and starts periodic downloads cleanup."
+		}
+	]
+}
